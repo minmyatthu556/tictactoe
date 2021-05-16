@@ -9,7 +9,7 @@ const Finished = (props: Props) => {
 
   return (
     <div className="w-full max-w-xl mx-auto">
-      <h1 className='text-center uppercase tracking-wide font-bold py-3 mb-3.5 text-2xl text-blue-500' >
+      <h1 className="text-center uppercase tracking-wide font-bold py-3 mb-3.5 text-2xl text-blue-500">
         {name && `Player ${name} won the game`}
         {!name && "It's a tie"}
       </h1>

@@ -27,10 +27,10 @@ const Start = (props: Props) => {
   }
 
   return (
-    <div className="w-full max-w-xl mx-auto">
+    <div className="w-full px-8 sm:max-w-xl mx-auto">
       <h1
         className="text-center uppercase tracking-wide font-bold
-      bg-blue-500 text-white rounded py-3 mb-3.5 text-2xl"
+      bg-blue-500 text-white rounded py-3 mb-14 text-2xl"
       >
         Tic Tac Toe
       </h1>
