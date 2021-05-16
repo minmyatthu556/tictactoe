@@ -40,9 +40,10 @@ const Start = (props: Props) => {
             htmlFor="player1"
             className="block text-gray-700 text-lg font-semibold mb-2"
           >
-            Player 1
+            Player 1: X
           </label>
           <input
+            placeholder="Enter the player 1 name"
             className="mb-3 shadow appearance-none border rounded w-full py-2 px-3
             text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             type="text"
@@ -56,9 +57,10 @@ const Start = (props: Props) => {
             htmlFor="player2"
             className="block text-gray-700 text-lg font-semibold mb-2"
           >
-            Player 2
+            Player 2: O
           </label>
           <input
+            placeholder="Enter the player 2 name"
             className="mb-3 shadow appearance-none border rounded w-full py-2 px-3
             text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             type="text"

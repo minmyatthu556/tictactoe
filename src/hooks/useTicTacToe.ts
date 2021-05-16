@@ -31,11 +31,11 @@ const useTicTacToe = (): ReturnValue => {
     let winner: string | null = null
     while (winningPositionsIndex < winningPositions.length && !winner) {
       const boardPositionsToCheck = winningPositions[winningPositionsIndex]
-      const boardValuesToCkeck = boardPositionsToCheck.map(
+      const boardValuesToCheck = boardPositionsToCheck.map(
         (index) => board[index]
       )
-      const checkingValue = boardValuesToCkeck[0]
-      const isFinished = boardValuesToCkeck.every(
+      const checkingValue = boardValuesToCheck[0]
+      const isFinished = boardValuesToCheck.every(
         (value) => value === checkingValue && checkingValue
       )
       winner = !isFinished ? null : checkingValue
