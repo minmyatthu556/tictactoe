@@ -9,7 +9,7 @@ interface ReturnValue {
   handleStart: (players: string[]) => void
 }
 
-export default (): ReturnValue => {
+const useTicTacToe = (): ReturnValue => {
   const [board, setBoard] = useState(Array(9).fill(''))
   const [turn, setTurn] = useState('X')
   const [winner, setWinner] = useState<string | null>(null)
@@ -71,3 +71,5 @@ export default (): ReturnValue => {
   }
   return { board, status, winner, handleClick, handleRestart, handleStart }
 }
+
+export default useTicTacToe
